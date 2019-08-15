@@ -1,0 +1,153 @@
+/* select all h1 element */
+* {
+    margin:0;/*white space between heading*/
+    padding:0;
+    box-sizing:border-box;
+}
+.clearfix:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+/* It is like a global rule */
+body {
+    font-family: sans-serif,Arial, Helvetica;
+}
+/* grouping technique */
+h1,h2{
+    font-family: Helvetica;
+}
+h1 {
+    color:#0984e3;
+    font-size:40px;
+    margin-bottom:20px;
+    
+}
+/* classes and the id, id could be only use once */
+/* css have margin,padding,brder and content */
+/* block element is something use the whole line */
+/* in line element can set height and length */
+.main-text {
+    text-align:justify;
+    margin-bottom:10px;
+}
+#author-text {
+    font-size:18px;
+    font-style: italic;
+    float:left;
+    margin-top:35px;
+    margin-left:20px;
+
+}
+h2 {
+    color:#0984e3;
+    font-size:25px;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+p {
+    font-size:18px;
+    text-align: justify;
+    font-family: serif;
+}
+.author-name{
+    color:#0984e3;
+}
+.container{
+    margin-top: 0px;
+    /* margin :top right bottom left; */
+    margin: 0px auto 0 auto;
+    width: 1140px;
+    /*make the website centered*/
+    margin-left:auto;
+    margin-right:auto;
+}
+.main-text {
+}
+.blog-post{
+ 
+    width : 75%;
+    float: left;
+    padding-right:20px;
+    position: relative;
+}
+
+.author-box {
+    padding-top:20px;
+    /*boarder property, add a line*/
+    border-top:1px solid grey;
+    width:75%;
+    float:left;
+
+}
+.other-post{
+    
+    width: 20%;
+    float: right;
+
+}
+.re-h1size{
+    font-size:35px;
+}
+/* only image inside the author box*/
+.author-box img{
+    height:100px;
+    width:100px;
+    /*how to let the image to become circle*/
+
+    border-radius: 50%;
+    float:left;
+    margin-bottom:10px;
+}
+.blog-post img{
+    height:150px;
+    width:auto;
+    margin-bottom:10px;
+}
+.date {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-style: italic;
+    font-size:15px;
+
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.3)),url(../resources/img/16.jpg);
+    background-size:cover;
+    background-position:center;
+    height: 330vh;
+
+}
+/*first head could be 60, second could be 36. the text should be 15-25px8*/
+/* we can get font from google web font*/
+.good{
+    margin-top:40px;
+}
+.row{
+    max-width:1140px;
+    margin: 0 auto 0 auto; 
+}
+.main-navs{
+    margin-left:500px;
+    list-style:none;
+    margin-top:30px;
+}
+/*how can element side by side*/
+.main-navs li{
+    display: inline-block;
+    margin-left: 40px;
+}
+/*select all li and a in main navs element*/
+.main-navs li a:link,
+.main-navs li a:visited{
+    color:rgb(243, 241, 241);
+    text-decoration:none;
+    font-size:120%;
+    border-bottom:2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+.main-navs li a:hover,
+.main-navs li a:active{
+    border-bottom:2px solid #95a5a6;
+}

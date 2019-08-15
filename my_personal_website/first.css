@@ -1,0 +1,49 @@
+.container{
+    margin-top: 5px;
+    /* margin :top right bottom left; */
+    margin: 5px auto 0 auto;
+    width: 1140px;
+    /*make the website centered*/
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.homepage-main {
+    position: relative;
+}
+.homepage-main img{
+    height:100px;
+    width:100px;
+    z-index: 2;
+    /*how to let the image to become circle*/
+    border-radius: 50%;
+    margin-right:500px;
+    float:right;
+
+}
+.bg-video {
+    width: 100%;
+    height: 100%;
+
+}
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(22, 21, 21, 0.5);
+}
+
+.content{
+    position: absolute;
+    top: 20%;
+    left: 18rem;
+    right: 0rem;
+    z-index: 1;
+    color: #fff;
+}
+.block-post{
+    float: right;
+    width : 50%;
+}
